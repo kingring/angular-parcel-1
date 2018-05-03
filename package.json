@@ -1,0 +1,44 @@
+{
+  "name": "angular-parcel",
+  "version": "0.0.1",
+  "description": "Angular starting point with parcel",
+  "license": "MIT",
+  "author": "Tyler Knipfer <knipferrc@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knipferrc/angular-parcel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knipferrc/angular-parcel/issues"
+  },
+  "keywords": [
+    "typescript",
+    "angular",
+    "parcel",
+    "boilerplate"
+  ],
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "NODE_ENV=production parcel build index.html",
+    "format": "prettier --write '**/*.{tsx,ts,css,md,js}'"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.3",
+    "parcel-bundler": "^1.8.0",
+    "prettier": "^1.12.1",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.10",
+    "@angular/compiler": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "@angular/forms": "^5.2.10",
+    "@angular/platform-browser": "^5.2.10",
+    "@angular/platform-browser-dynamic": "^5.2.10",
+    "core-js": "^2.5.5",
+    "rxjs": "^6.1.0",
+    "rxjs-compat": "^6.1.0",
+    "systemjs": "^0.21.3",
+    "zone.js": "^0.8.26"
+  }
+}
