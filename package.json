@@ -23,7 +23,7 @@
     "format": "prettier --write '**/*.{tsx,ts,css,md,js}'"
   },
   "devDependencies": {
-    "@types/node": "^10.0.3",
+    "@types/node": "^10.0.4",
     "parcel-bundler": "^1.8.1",
     "prettier": "^1.12.1",
     "typescript": "^2.8.3"
