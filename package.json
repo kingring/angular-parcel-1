@@ -18,15 +18,17 @@
     "boilerplate"
   ],
   "scripts": {
-    "start": "parcel index.html",
-    "build": "NODE_ENV=production parcel build index.html",
+    "start": "NODE_ENV=development parcel index.html",
+    "build-app": "NODE_ENV=production parcel build index.html",
+    "build": "npm run build-app && npm run ngsw-config && npm run ngsw-copy",
+    "ngsw-config": "node_modules/.bin/ngsw-config dist app/ngsw-config.json",
+    "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js dist/",
     "format": "prettier --write '**/*.{tsx,ts,css,md,js}'"
   },
   "devDependencies": {
     "@angular/language-service": "^6.0.0",
     "@types/node": "^10.0.4",
     "parcel-bundler": "^1.8.1",
-    "parcel-plugin-sw-precache": "^0.4.2",
     "prettier": "^1.12.1",
     "typescript": "^2.8.3"
   },
@@ -40,6 +42,7 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
+    "@angular/service-worker": "^6.0.0",
     "core-js": "^2.5.6",
     "rxjs": "^6.1.0",
     "systemjs": "^0.21.3",
