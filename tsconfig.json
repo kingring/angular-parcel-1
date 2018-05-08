@@ -2,6 +2,13 @@
   "compilerOptions": {
     "module": "commonjs",
     "removeComments": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": [
+      "es2018",
+      "dom"
+    ]
   }
 }
