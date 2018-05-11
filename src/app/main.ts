@@ -6,4 +6,14 @@ if (process.env.NODE_ENV === 'production') {
   enableProdMode()
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .then(() => {
+    if (module['hot']) {
+      module['hot'].accept()
+      module['hot'].dispose(() => {
+        window.location.reload()
+      })
+    }
+  })
+  .catch(err => console.error(err))
