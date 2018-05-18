@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@angular/language-service": "^6.0.2",
-    "@types/node": "^10.1.0",
+    "@types/node": "^10.1.1",
     "parcel-bundler": "^1.8.1",
     "prettier": "^1.12.1",
     "typescript": "^2.8.3"
