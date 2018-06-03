@@ -18,8 +18,8 @@
     "boilerplate"
   ],
   "scripts": {
-    "start": "NODE_ENV=development parcel src/index.html",
-    "build-app": "NODE_ENV=production parcel build src/index.html",
+    "start": "cross-env NODE_ENV=development parcel src/index.html",
+    "build-app": "cross-env NODE_ENV=production parcel build src/index.html",
     "build": "npm run build-app && npm run ngsw-config && npm run ngsw-copy",
     "ngsw-config": "node_modules/.bin/ngsw-config dist src/ngsw-config.json",
     "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js dist/",
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@angular/language-service": "^6.0.3",
     "@types/node": "^10.3.0",
+    "cross-env": "^5.1.6",
     "parcel-bundler": "^1.8.1",
     "prettier": "^1.13.4",
     "typescript": "^2.9.1"
