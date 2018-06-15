@@ -26,26 +26,26 @@
     "format": "prettier --write '**/*.{tsx,ts,css,md,js}'"
   },
   "devDependencies": {
-    "@angular/language-service": "^6.0.3",
-    "@types/node": "^10.3.0",
-    "cross-env": "^5.1.6",
-    "parcel-bundler": "^1.8.1",
-    "prettier": "^1.13.4",
-    "typescript": "^2.9.1"
+    "@angular/language-service": "^6.0.5",
+    "@types/node": "^10.3.3",
+    "cross-env": "^5.2.0",
+    "parcel-bundler": "^1.9.0",
+    "prettier": "^1.13.5",
+    "typescript": "^2.9.2"
   },
   "dependencies": {
-    "@angular/animations": "^6.0.3",
-    "@angular/common": "^6.0.3",
-    "@angular/compiler": "^6.0.3",
-    "@angular/core": "^6.0.3",
-    "@angular/forms": "^6.0.3",
-    "@angular/http": "^6.0.3",
-    "@angular/platform-browser": "^6.0.3",
-    "@angular/platform-browser-dynamic": "^6.0.3",
-    "@angular/router": "^6.0.3",
-    "@angular/service-worker": "^6.0.3",
+    "@angular/animations": "^6.0.5",
+    "@angular/common": "^6.0.5",
+    "@angular/compiler": "^6.0.5",
+    "@angular/core": "^6.0.5",
+    "@angular/forms": "^6.0.5",
+    "@angular/http": "^6.0.5",
+    "@angular/platform-browser": "^6.0.5",
+    "@angular/platform-browser-dynamic": "^6.0.5",
+    "@angular/router": "^6.0.5",
+    "@angular/service-worker": "^6.0.5",
     "core-js": "^2.5.7",
-    "rxjs": "^6.2.0",
+    "rxjs": "^6.2.1",
     "systemjs": "^0.21.4",
     "zone.js": "^0.8.26"
   }
